@@ -1,0 +1,30 @@
+# Schola-herv default configuration
+# ─────────────────────────────────────────────────────────────────────────────
+# Many academic APIs (Unpaywall, OpenAlex, Crossref) ask for a polite-pool
+# e-mail address so they can contact you if your bot misbehaves.
+# Set SCHOLAHERV_EMAIL in your environment, or edit the value below.
+# ─────────────────────────────────────────────────────────────────────────────
+user_agent: "Schola-herv/2.0 (Academic Corpus Builder; mailto:your.email@example.com)"
+
+rate_limits:
+  arxiv: 3.0        # seconds between requests
+  pubmed: 0.5
+  crossref: 0.5
+  unpaywall: 1.0
+  default: 2.0
+
+download:
+  max_concurrent: 10
+  retry_attempts: 3
+  retry_delay: 5    # seconds between retries
+  timeout: 60       # per-request timeout (seconds)
+
+extraction:
+  min_text_length: 500
+  ocr_fallback: false
+  output_format: "jsonl"
+
+unpaywall:
+  # Replace with your real e-mail, or set the SCHOLAHERV_EMAIL env variable.
+  # Leaving this as the placeholder is fine for testing.
+  email: "your.email@example.com"

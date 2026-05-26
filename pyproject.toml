@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "schola-herv"
+version = "1.0.0"
+description = "Mass-scale academic paper discovery and PDF harvesting for LLM corpus building."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Yahia Shawon", email = "yahiashawon@ihep.ac.cn" }
+]
+keywords = [
+  "academic", "papers", "pdf", "download", "arxiv", "pubmed",
+  "openalex", "crossref", "nlp", "corpus", "llm", "research"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "rich>=13.0.0",
+  "pyyaml>=6.0",
+  "aiohttp>=3.9.0",
+  "arxiv>=2.1.0",
+  "biopython>=1.83",
+  "habanero>=1.2.0",
+  "pymupdf>=1.23.0",
+  "tenacity>=8.2.0",
+  "tqdm>=4.66.0",
+  "flask>=3.0.0",
+  "openpyxl>=3.1.0",
+  "beautifulsoup4>=4.12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yahiashawon/schola-herv"
+"Bug Tracker" = "https://github.com/yahiashawon/schola-herv/issues"
+Documentation = "https://github.com/yahiashawon/schola-herv#readme"
+Changelog = "https://github.com/yahiashawon/schola-herv/blob/main/CHANGELOG.md"
+
+[project.scripts]
+schola-herv = "schola_herv.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["schola_herv*"]
+
+[tool.setuptools.package-data]
+schola_herv = ["recipes/*.yaml"]
