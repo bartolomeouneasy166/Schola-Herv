@@ -1,0 +1,18 @@
+# High Energy Physics corpus recipe
+keywords:
+  - "high energy physics"
+  - "particle physics"
+  - "collider experiments"
+  - "LHC"
+  - "ATLAS"
+  - "CMS"
+  - "quantum field theory"
+  - "Standard Model"
+  - "supersymmetry"
+sources: "arxiv"
+max_results: 50000
+year_from: 2010
+min_citations: 3
+ai_expand: true
+ai_relevance: 4
+ai_summarise: true
